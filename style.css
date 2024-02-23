@@ -1,0 +1,894 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(224, 228, 231); */
+    background-color: white;
+}
+
+/* NAVBAR */
+#navbar{
+    height: 11.5vh;
+    width: 100vw;
+    /* background-color: red; */
+    /* position:sticky; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    border:border-box;
+    background-color: white;
+    overflow: hidden;
+    position: fixed; /* Make the navbar sticky */
+    top: 0;
+    z-index: 1000; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25%;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 35%;
+}
+
+.nav-search input {
+    display: block;
+    /* position: relative; */
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 8px 40px 8px 20px;
+    border: none;
+    box-shadow: 0 1px 2px 1px rgb(218, 218, 218);
+}
+
+.nav-search i { 
+    color: rgb(107, 107, 107);
+    font-size: 28px;
+}
+
+
+/*  GREENBAR  */
+#greenbar{
+    height: 11vh;
+    width: 100%;
+    background-color: rgb(30, 56, 49);
+    margin-top: 0.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 9%;
+    margin-top: 100px /* now not hidden
+    /* padding: 2rem; */
+}
+
+#greenleft h5{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#greenright button{
+    color: white;
+    background-color: rgb(30, 56, 49);
+    border-color: white;
+    border-style: solid;
+    border-radius: 500px;
+    font-size: 16px;
+    border: 2px 1px 2px 1px;
+    padding: 0.6vw;
+}
+
+
+/*  BARISTA RECOMMENDS  */
+#rec {
+    margin-top: 1.5rem;
+    height: 50vh;
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 100%;
+    background-color: rgb(237, 235, 232);
+}
+
+#rec-top {
+    /* background-color: blue; */
+    height: 8vh;
+    /* width: 64vw; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:  3vw ;
+    padding-bottom: 3.5vw;
+}
+
+#rec-top h5 {
+    color: rgb(30, 56, 49);
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+
+#rec-top h6 {
+    color: rgb(0, 117, 74);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+#rec-bottom {
+    height: 28vh;
+    width: 100%;
+    /* background-color: brown; */
+    padding-left: 1.3vw;
+    display: flex;
+}
+
+#rcard1 {
+    height: 100%;
+    width: 30vw;
+    background-color: white;
+    border:2px solid rgb(209, 209, 209);
+    border-radius: 4%;
+    /* background-color: skyblue; */
+    margin-right: 1.5vw;
+    padding: 1vw;
+}
+
+#rtop {
+    height: 14vh;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    margin-bottom: 0.5vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: start;
+}
+
+#ritem1 {
+    margin-right: 1vw;
+}
+
+#ritem1 img {
+    height:100%;
+    width: 5.8rem;
+    border-radius: 10%;
+}
+
+#ritem2 img {
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+#ritem2 h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.4vw;
+}
+
+#ritem2 h5 {
+    color: rgb(107, 117, 125);
+    font-size: 11px;
+    font-weight: 200;
+    font-family: "Noto Sans SC", sans-serif;
+    letter-spacing: -0.5px;
+}
+
+#rbottom {
+    height: calc(100% - 14vh) ;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rbottom h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+#rbottom button {
+    color: white;
+    font-weight: 600;
+    background-color: rgb(0, 117, 74);
+    padding: 0.5vw 1.3vw;
+    border-radius: 500px;
+    border: none;
+    box-shadow: 1px 2px 2px 1px rgb(222, 222, 222);
+}
+
+#rbottom button:hover {
+    background-color: black;
+}
+
+#rcard2 {
+    height: 100%;
+    width: 30vw;
+    background-color: white;
+    border:2px solid rgb(209, 209, 209);
+    border-radius: 4%;
+    padding: 1vw;
+}
+
+
+/*  STARBUCKS SUBSCRIPTION  */
+#subscription {
+    height: 35vh;
+    width: 100%;
+    /* background-color: blue; */
+    padding-left: 7.5%;
+}
+
+#subscription-container {
+    margin-top: 5vw;
+    /* margin-bottom: 5.5vw; */
+    padding-top: 1vw;
+    padding-bottom: 1.5vw;
+    background-color: rgb(9, 143, 125);
+    border: 2px solid rgb(7, 120, 107);
+    border-radius: 10px;
+    width: 82vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+}
+
+#subscription-left {
+    /* background-color: aqua; */
+    /* background-color: rgb(9, 143, 125); */
+    height: 100%;
+    width: 7vw;
+    margin-right: 4vw;
+    display: flex;
+    align-items: center;
+}
+
+#subscription-left img {
+    height: 34vh;
+    width: 36vh;
+}
+
+#subscription-center {
+    /* background-color: aqua; */
+    /* background-color: coral; */
+    height: 100%;
+    width: 45vw;
+    padding-top: 1vw;
+}
+
+#sub-center-up h5 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#sub-center-up h4 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0.8vw;
+    letter-spacing: -1px ;
+}
+
+#sub-center-up p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.8vw;
+}
+
+#sub-center-bottom {
+    margin-top: 4.2vw;
+}
+
+#sub-center-bottom p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+}
+
+#sub-center-bottom h4{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.5vw;
+}
+
+#subscription-right {
+    height: 115%;
+    width: 25vw;
+    /* background-color: coral; */
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.8vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+}
+
+#sub-right-up h5 {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    /* letter-spacing: -0.8px; */
+}
+
+#sub-right-bottom button{
+    color: white;
+    background-color: rgb(0, 117, 74);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1vw 3.5vw;
+    border: none;
+    border-radius: 255px;
+}
+
+
+/*  HANDCRAFTED CURATIONS  */
+#handcrafted {
+    height: 36.55vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 5.5vw;
+    padding-left: 8.5%;
+    padding-right: 9%;
+    /* padding-top: 2vw; */
+}
+
+#handcrafted-top {
+    height: 5vh;
+    width: 80vw;
+    margin-bottom: 1vw;
+    /* background-color: aquamarine; */
+}
+
+#handcrafted-top h5{
+    color: rgb(30, 56, 49);
+    font-size: 1.6rem;
+    font-weight: 900;    /* letter-spacing: -1px; */
+}
+
+#handcrafted-bottom {
+    height: 22.31vh;
+    width: 100%;
+    /* background-color: bisque; */
+}
+
+#items-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#items-container img {
+    height: 15.25vh;
+    width: 7.25vw;
+    border-radius: 50%;
+    margin-bottom: 0.8vw;
+    border: 2px solid rgb(237, 235, 232);
+    /* padding-bottom: vw; */
+}
+
+#items-container img:hover{
+    border: 3px solid darkgreen;
+}
+
+#items-container h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#item1 {
+    width: 10vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#item2 {
+    width: 10vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#item3 {
+    width: 10vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#item4 {
+    width: 10vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#item5 {
+    width: 10vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#item6 {
+    width: 10vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*  LATEST OFFERINGS */
+#products {
+    height: 60.35vh;
+    width: 100;
+    margin-bottom: 5vw;
+    /* background-color: red; */
+}
+
+#productsheading {
+    height: 8.58vh;
+    width: 64.51vw;
+    /* background-color: bisque; */
+    padding-left: 5%;
+}
+
+#productsheading h3 {
+    color: rgb(30, 56, 49);
+    font-size: 1.6rem;
+    font-weight: 900; 
+}
+
+#productsitems{
+    height: calc(60.35vh - 8.58vh);
+    width: 100%;
+    /* background-color: darkcyan; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-left: 6%;
+    padding-right: 8%;
+    gap: 1.5rem;
+}
+
+#productitem1{
+    background-color: rgb(250, 250, 250);
+    height: 51.50vh;
+    width: 28vw;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgb(227, 227, 227);
+    /* background-color: orange; */
+}
+
+#ptop img {
+    /* border-top: 2px; */
+    border-radius: 8.5px;
+    height: 11vw;
+    width: 100%;
+}
+
+#pbottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 0.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1vw;
+}
+
+#pbottomtop img {
+    height: 14px;
+    width: 14px; 
+}
+
+#pbottomtop h4{
+    color: rgb(30, 56, 49);
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    margin-bottom: 1.5%;
+}
+
+#pbottomtop h5{
+    color: rgb(107, 117, 125);
+    font-size: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    /* line-height: 10vw; */
+}
+
+#pbottomcenter p {
+    /* color: rgb(122, 125, 122); */
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 1vw;
+}
+
+#pbottombottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pbottombottom h4{
+    font-size: 0.9rem;
+    font-weight: 900;
+
+}
+
+#pbottombottom button{
+    color: white;
+    font-weight: 600;
+    background-color: rgb(0, 117, 74);
+    padding: 0.5vw 1.5vw;
+    border-radius: 500px;
+    border: none;
+    box-shadow: 1px 2px 2px 1px rgb(222, 222, 222);
+}
+
+#pbottombottom button:hover{
+    background-color: black;
+}
+
+#productitem2{
+    background-color: rgb(250, 250, 250);
+    height: 51.50vh;
+    width: 28vw;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgb(227, 227, 227);
+    /* background-color: orange; */
+}
+
+#productitem3{
+    background-color: rgb(250, 250, 250);
+    height: 51.50vh;
+    width: 28vw;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgb(227, 227, 227);
+    /* background-color: orange; */
+}
+
+
+/* LEARN MORE ABOUT THE WORLD OF COFFEE */
+
+#coffeeworld{
+    height: 71.07vh;
+    width: 100%;
+    background-color: rgb(237, 235, 232);
+    /* background-color: red; */
+    padding: 2vw 7vw 2vw 6vw;
+}
+
+#coffeeworldup{
+    height: 8.69vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#coffeeworldup h1 {
+    color: rgb(30, 56, 49);
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+#coffeeworldup h4{
+    color: rgb(0, 117, 74);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#coffeeworldbottom {
+    height: 52.54vh;
+    width: 100%;
+    /* background-color: burlywood; */
+    padding: 0.5vw 0.5vw 0 0.5vw;
+    padding-top: 1vw; /* Adjust according to navbar height */
+    position: relative;
+    z-index: 999;
+}
+
+#coffeeworldbottom-container{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    border-radius: 10px;
+    /* position: relative; */
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+#coffeeworldbottom-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* z-index: -1; */
+    /* opacity: 0.9; */
+    left: 0;
+    right: 0;
+    /* opacity: 15px 10px 5px 12px red; */
+    /* overflow-clip-margin: content-box; */
+    /* overflow: clip; */
+    /* opacity: 0.1; */
+    /* transition: opacity 0.3s ; */
+}
+/* #coffeeworldbottom-container img:hover::after {
+    opacity: 1;
+  } */
+/* #coffeeworldbottom-container img:hover{
+   opacity: 1;
+} */
+
+#overlay {
+    position: absolute;
+    height: 52%;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    padding-top: 1vw;
+    padding-left: 2.2vw;
+}
+
+#overlay1 button {
+    color: rgb(0, 153, 102);
+    background-color: rgb(230, 237, 235);
+    border: none;
+    border-radius: 6px;
+    padding: 0.4vw;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#overlay2{
+    /* height: 50vh; */
+    height: 100%;
+    padding-top: 10vw;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+#overlay2 h1{
+    /* color: white; */
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#overlay2  p{
+    color: rgb(255, 255, 255);
+    margin-top: 1vw;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#overlay2 button {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2vw;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5vw 4vw;
+    border: none;
+    border-radius: 255px;
+}
+
+#overlay2 button:hover{
+    background-color: rgb(237, 235, 232);
+}
+
+
+/* FOOTER */
+#footer {
+    margin-top:3vw;
+    padding: 9vw 7vw 0 6vw;
+    height: 131.12vh;
+    width: 100%;
+    background-color: rgb(14, 56, 44);
+}
+
+#footer h4:hover{
+    color: rgb(146, 150, 149);
+}
+
+#footer-top{
+    height: 93.22vh;
+    width: 100%;
+    /* background-color: red; */
+    /* padding: ; */
+}
+
+#footer-top-items{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#footer-top-item1{
+    margin-right: 1vw;
+    height: 93.44vh;
+    width: 12vw;
+    /* background-color: bisque; */
+}
+
+#footer-top-item2{
+    margin-right: 1vw;
+    height: 93.44vh;
+    width: 12vw;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+#footer-top-item2 h2{
+    margin-bottom: 1vw;
+    color: rgb(255, 255, 255);
+    font-weight:700;
+    align-items: flex-start;
+}
+#footer-top-item2 h4{
+    margin-bottom: 2vw;
+    color: rgb(255, 255, 255);
+    font-weight:400;
+    align-items: flex-start;
+}
+
+#footer-top-item3{
+    margin-right: 2vw;
+    height: 93.44vh;
+    /* width: 12vw; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: orange; */
+}
+#footer-top-item3 h2{
+    margin-bottom: 1vw;
+    color: rgb(255, 255, 255);
+    font-weight:700;
+    /* font-size: 1.4rem; */
+    align-items: flex-start;
+}
+#footer-top-item3 h4{
+    margin-bottom: 2vw;
+    color: rgb(255, 255, 255);
+    font-weight:400;
+    align-items: flex-start;
+}
+
+#footer-top-item4{
+    margin-right: 2vw;
+    height: 93.44vh;
+    width: 14vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: bisque; */
+}
+#footer-top-item4 h2{
+    margin-bottom: 1vw;
+    color: rgb(255, 255, 255);
+    font-weight:700;
+    /* font-size: 1.4rem; */
+    align-items: flex-start;
+}
+#footer-top-item4 h4{
+    margin-bottom: 2vw;
+    color: rgb(255, 255, 255);
+    font-weight:400;
+    align-items: flex-start;
+}
+
+#footer-top-item5{
+    margin-right: 5vw;
+    height: 93.44vh;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: bisque; */
+}
+#footer-top-item5-heading h2{
+    margin-bottom: 1vw;
+    color: rgb(255, 255, 255);
+    font-weight:700;
+    font-size: 1.4rem;
+    align-items: flex-start;
+}
+#footer-top-item5-icons i{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-right: 1vw;
+    margin: 0.8vw;
+}
+
+#footer-top-item6{
+    margin-right: 1vw;
+    height: 93.44vh;
+    /* width: 20vw; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: violet; */
+}
+#footer-top-item6 img {
+    height: 8.75vh;
+    width: 13.03vw;
+    margin-bottom: 1vw;
+}
+
+#footer-bottom-up {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#footer-bottom{
+    margin-top: 2vw;
+    /* height: 6.045vh; */
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+#footer-bottom-left {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1vw;
+}
+
+#footer-bottom-right {
+    color: rgb(255, 255, 255);
+}
